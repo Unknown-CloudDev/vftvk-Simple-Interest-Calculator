@@ -6,13 +6,13 @@ function compute()
     document.getElementById("result").innerHTML = principal*years*rate/100;
     var year = new Date().getFullYear()+parseInt(years); 
 
-    if(principal.value= "0")
+    if(principal= "<=0")
     {
        alert ("Please enter a positive number");
        //principal.focus();
        //return false;
     }
-    else if (principal.value= ">1")
+    else
     {
       return (principal*years*rate/100);
     }
