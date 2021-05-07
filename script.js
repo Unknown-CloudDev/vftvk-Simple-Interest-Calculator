@@ -6,6 +6,17 @@ function compute()
     document.getElementById("result").innerHTML = principal*years*rate/100;
     var year = new Date().getFullYear()+parseInt(years); 
 
+    if(principal.value= "0")
+    {
+       alert ("Please enter a positive number");
+       //principal.focus();
+       //return false;
+    }
+    else if (principal.value= ">1")
+    {
+      return (principal*years*rate/100);
+    }
+
       //document.getElementById("result").innerHTML = " if you deposit <mark>1000000</mark> at an interest of <mark>3.5%</mark>. You will receive an amount of <mark>175000</mark>, in the year <mark>2025</mark>"
 }
 
@@ -22,5 +33,3 @@ function compute()
         var rateval = document.getElementById("rate").value;
         document.getElementById("rate_val").innerText=rateval;
     }    
-
-   
